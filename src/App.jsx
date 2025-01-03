@@ -20,7 +20,7 @@ const App = () => {
     const fetchCategories = async () => {
       try {
         const res = await axios.get(
-          "https://storeapi20240917165254.azurewebsites.net/api/category"
+          "https://teaapi.azurewebsites.net/api/category"
         );
         setCategories(res.data);
       } catch (err) {
@@ -36,7 +36,7 @@ const App = () => {
     const fetchProducts = async () => {
       try {
         const res = await axios.get(
-          "https://storeapi20240917165254.azurewebsites.net/api/product"
+          "https://teaapi.azurewebsites.net/api/product"
         );
         setProducts(res.data);
       } catch (err) {
